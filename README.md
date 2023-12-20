@@ -1,2 +1,2 @@
 # taxiinet
-TAXII 2 Server Library Written in C#
+TAXII 2 Server Written in C#
