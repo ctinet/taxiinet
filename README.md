@@ -63,7 +63,7 @@ This section defines the names and permitted values of common types used through
 | `object`      | An Object Resource, see section 3.7.               |
 | `status`      | A Status Resource, see section 4.3.1.              |
 | `string`      | The string data type represents a finite-length string of valid characters from the Unicode coded character set [ISO10646] that are encoded in UTF-8. Unicode incorporates ASCII [RFC0020] and the characters of many other international character sets. |
-| `timestamp   | The timestamp type defines how timestamps are represented in TAXII and is represented in serialization as a string. The timestamp type MUST be a valid RFC 3339-formatted timestamp [RFC3339] using the format YYYY-MM-DDTHH:MM:SS.ssssssZ Unlike the STIX timestamp type, the TAXII timestamp MUST have microsecond precision. The timestamp MUST be represented in the UTC timezone and MUST use the “Z” designation to indicate this. |
+| `timestamp   | <p>The timestamp type defines how timestamps are represented in TAXII and is represented in serialization as a string.</p> <p>The timestamp type MUST be a valid RFC 3339-formatted timestamp [RFC3339] using the format YYYY-MM-DDTHH:MM:SS.ssssssZ Unlike the STIX timestamp type, the TAXII timestamp MUST have microsecond precision. The timestamp MUST be represented in the UTC timezone and MUST use the “Z” designation to indicate this.</p> |
 | `versions`    | A Versions Resource, see section 5.8.1.            |
 
 </details>
