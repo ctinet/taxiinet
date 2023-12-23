@@ -2,7 +2,7 @@
 TAXII 2 Server Written in C#
 
 <details>
-    <summary>Introduction to TAXII</summary>
+<summary>Introduction to TAXII</summary>
 
 
 ### Overview
@@ -22,10 +22,8 @@ Each API Root contains a set of Endpoints that a TAXII Client contacts in order 
 
     - Server Discovery, as described above, can be used to learn about the API Roots hosted by a TAXII Server.
     - Each API Root might support zero or more Collections. Interactions with Collections include discovering the type of CTI contained in that Collection, pushing new CTI to that Collection, and/or retrieving CTI from that Collection. Each piece of CTI content in a Collection is referred to as an Object.
-
-●      Each API Root might host zero or more Channels.
-
-●      Each API Root also allows TAXII Clients to check on the Status of certain types of requests to the TAXII Server. For example, if a TAXII Client submitted new CTI, a Status request can allow the Client to check on whether the new CTI was accepted.
+	- Each API Root might host zero or more Channels.
+	- Each API Root also allows TAXII Clients to check on the Status of certain types of requests to the TAXII Server. For example, if a TAXII Client submitted new CTI, a Status request can allow the Client to check on whether the new CTI was accepted.
 
 
 
@@ -44,28 +42,29 @@ Each API Root contains a set of Endpoints that a TAXII Client contacts in order 
 </details>
 
 <details>
-    <summary>Data Types</summary>
+<summary>Data Types</summary>
 
 This section defines the names and permitted values of common types used throughout this specification. These types are referenced by the “Type” column in other sections. This table does not, however, define the meaning of any properties using these types. These types may be further restricted elsewhere in the document.
 
-| Type | Description |
-| api-root | An API Root Resource, see section 4.2.1. |
-| boolean | A boolean is a value of either true or false. Properties with this type MUST have a literal (unquoted) value of true or false. |
-| collection | A Collection Resource, see section 5.2.1. |
-| collections | A Collections Resource, see section 5.1.1. |
-| dictionary | A dictionary is a JSON object that captures an arbitrary set of key/value pairs. |
-| discovery | A Discovery Resource, see section 4.1.1. |
-| envelope | A TAXII Envelope, see section 3.7. |
-| error | An Error Message, see section 3.6.1. |
-| identifier | An identifier is an RFC 4122-compliant Version 4 UUID. The UUID MUST be generated according to the algorithm(s) defined in RFC 4122, section 4.4 (Version 4 UUID) [RFC4122]. |
-| integer | The integer data type represents a whole number. Unless otherwise specified, all integers MUST be capable of being represented as a signed 54-bit value  ([-(2**53)+1, (2**53)-1]) as defined in [RFC7493]. Additional restrictions MAY be placed on the type where it is used. |
-| list | The list type defines a sequence of values ordered based on how they appear in the list. The phrasing "list of type &lt;type&gt;" is used to indicate that all values within the list MUST conform to the specified type. For instance, list of type integer means that all values of the list must be of the integer type. This specification does not specify the maximum number of allowed values in a list, however every instance of a list MUST have at least one value. Specific TAXII resource properties may define more restrictive upper and/or lower bounds for the length of the list. Empty lists are prohibited in TAXII and MUST NOT be used as a substitute for omitting optional properties. If the property is required, the list MUST be present and MUST have at least one value. |
-| manifest | A Manifest Resource, see section 5.3.1. |
-| object | An Object Resource, see section 3.7. |
-| status | A Status Resource, see section 4.3.1. |
-| string | The string data type represents a finite-length string of valid characters from the Unicode coded character set [ISO10646] that are encoded in UTF-8. Unicode incorporates ASCII [RFC0020] and the characters of many other international character sets. |
-| timestamp | The timestamp type defines how timestamps are represented in TAXII and is represented in serialization as a string. The timestamp type MUST be a valid RFC 3339-formatted timestamp [RFC3339] using the format YYYY-MM-DDTHH:MM:SS.ssssssZ Unlike the STIX timestamp type, the TAXII timestamp MUST have microsecond precision. The timestamp MUST be represented in the UTC timezone and MUST use the “Z” designation to indicate this. |
-| versions | A Versions Resource, see section 5.8.1. |
+| Type        | Description                                        |
+|-------------|----------------------------------------------------|
+| api-root    | An API Root Resource, see section 4.2.1.           |
+| boolean     | A boolean is a value of either true or false. Properties with this type MUST have a literal (unquoted) value of true or false. |
+| collection  | A Collection Resource, see section 5.2.1.          |
+| collections | A Collections Resource, see section 5.1.1.         |
+| dictionary  | A dictionary is a JSON object that captures an arbitrary set of key/value pairs. |
+| discovery   | A Discovery Resource, see section 4.1.1.           |
+| envelope    | A TAXII Envelope, see section 3.7.                 |
+| error       | An Error Message, see section 3.6.1.               |
+| identifier  | An identifier is an RFC 4122-compliant Version 4 UUID. The UUID MUST be generated according to the algorithm(s) defined in RFC 4122, section 4.4 (Version 4 UUID) [RFC4122]. |
+| integer     | The integer data type represents a whole number. Unless otherwise specified, all integers MUST be capable of being represented as a signed 54-bit value  ([-(2**53)+1, (2**53)-1]) as defined in [RFC7493]. Additional restrictions MAY be placed on the type where it is used. |
+| list        | The list type defines a sequence of values ordered based on how they appear in the list. The phrasing "list of type &lt;type&gt;" is used to indicate that all values within the list MUST conform to the specified type. For instance, list of type integer means that all values of the list must be of the integer type. This specification does not specify the maximum number of allowed values in a list, however every instance of a list MUST have at least one value. Specific TAXII resource properties may define more restrictive upper and/or lower bounds for the length of the list. Empty lists are prohibited in TAXII and MUST NOT be used as a substitute for omitting optional properties. If the property is required, the list MUST be present and MUST have at least one value. |
+| manifest    | A Manifest Resource, see section 5.3.1.            |
+| object      | An Object Resource, see section 3.7.               |
+| status      | A Status Resource, see section 4.3.1.              |
+| string      | The string data type represents a finite-length string of valid characters from the Unicode coded character set [ISO10646] that are encoded in UTF-8. Unicode incorporates ASCII [RFC0020] and the characters of many other international character sets. |
+| timestamp   | The timestamp type defines how timestamps are represented in TAXII and is represented in serialization as a string. The timestamp type MUST be a valid RFC 3339-formatted timestamp [RFC3339] using the format YYYY-MM-DDTHH:MM:SS.ssssssZ Unlike the STIX timestamp type, the TAXII timestamp MUST have microsecond precision. The timestamp MUST be represented in the UTC timezone and MUST use the “Z” designation to indicate this. |
+| versions    | A Versions Resource, see section 5.8.1.            |
 
 </details>
 
