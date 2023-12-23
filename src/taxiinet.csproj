@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>netstandard2.1</TargetFrameworks>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <RootNamespace>Cti.Taxii</RootNamespace>
+	  <PackageId>taxiinet</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>Nilay Vishwakarma</Authors>
+	  <PackageDescription>TAXII 2 Server Written in C#</PackageDescription>
+	  <RepositoryUrl>https://github.com/ctinet/taxiinet</RepositoryUrl>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <PackageTags>STIX</PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <LangVersion>latest</LangVersion>
+	  <DocumentationFile>..\taxiinet.xml</DocumentationFile>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	
+</Project>
