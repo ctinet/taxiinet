@@ -20,10 +20,10 @@ API Roots are logical groupings of TAXII Collections, Channels, and related func
 
 Each API Root contains a set of Endpoints that a TAXII Client contacts in order to interact with the TAXII Server. This interaction can take several forms:
 
-    - Server Discovery, as described above, can be used to learn about the API Roots hosted by a TAXII Server.
-    - Each API Root might support zero or more Collections. Interactions with Collections include discovering the type of CTI contained in that Collection, pushing new CTI to that Collection, and/or retrieving CTI from that Collection. Each piece of CTI content in a Collection is referred to as an Object.
-	- Each API Root might host zero or more Channels.
-	- Each API Root also allows TAXII Clients to check on the Status of certain types of requests to the TAXII Server. For example, if a TAXII Client submitted new CTI, a Status request can allow the Client to check on whether the new CTI was accepted.
+- Server Discovery, as described above, can be used to learn about the API Roots hosted by a TAXII Server.
+- Each API Root might support zero or more Collections. Interactions with Collections include discovering the type of CTI contained in that Collection, pushing new CTI to that Collection, and/or retrieving CTI from that Collection. Each piece of CTI content in a Collection is referred to as an Object.
+- Each API Root might host zero or more Channels.
+- Each API Root also allows TAXII Clients to check on the Status of certain types of requests to the TAXII Server. For example, if a TAXII Client submitted new CTI, a Status request can allow the Client to check on whether the new CTI was accepted.
 
 
 
@@ -42,7 +42,7 @@ Each API Root contains a set of Endpoints that a TAXII Client contacts in order 
 </details>
 
 <details>
-<summary>Data Types</summary>
+<summary>Data Types</summary>|
 
 This section defines the names and permitted values of common types used throughout this specification. These types are referenced by the “Type” column in other sections. This table does not, however, define the meaning of any properties using these types. These types may be further restricted elsewhere in the document.
 
